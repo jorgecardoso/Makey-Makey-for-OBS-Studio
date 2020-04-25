@@ -14,33 +14,33 @@
 
 */
 
-int keyCodes[NUM_INPUTS] = {
+int keyCodes[NUM_INPUTS][3] = {
   // top side of the makey makey board
  
-  KEY_UP_ARROW,      // up arrow pad
-  KEY_DOWN_ARROW,    // down arrow pad
-  KEY_LEFT_ARROW,    // left arrow pad
-  KEY_RIGHT_ARROW,   // right arrow pad
-  ' ',               // space button pad
-  MOUSE_LEFT,        // click button pad
+  {KEY_UP_ARROW,-1, -1},      // up arrow pad
+  {KEY_DOWN_ARROW,-1, -1},    // A4 - 
+  {KEY_LEFT_ARROW,-1, -1},    // left arrow pad
+  {KEY_LEFT_CTRL, KEY_LEFT_ALT, 'p'},   // D15 - Pause
+  {' ',-1, -1},               // space button pad
+  {MOUSE_LEFT,-1, -1},        // click button pad
   
   // female header on the back left side
   
-  'w',                // pin D5
-  'a',                // pin D4
-  's',                // pin D3
-  'd',                // pin D2
-  'f',                // pin D1
-  'g',                // pin D0
+  {KEY_LEFT_CTRL, KEY_LEFT_ALT, 's'},                // pin D5 - Stop Recording
+  {KEY_LEFT_CTRL, KEY_LEFT_ALT, 'r'},                // pin D4 - Start Recording
+  {KEY_LEFT_CTRL, KEY_LEFT_ALT, '1'},                // pin D3
+  {KEY_LEFT_CTRL, KEY_LEFT_ALT, '2'},                // pin D2
+  {KEY_LEFT_CTRL, KEY_LEFT_ALT, '3'},                // pin D1
+  {KEY_LEFT_CTRL, KEY_LEFT_ALT, '4'},                // pin D0
   
   // female header on the back right side
   
-  MOUSE_MOVE_UP,      // pin A5
-  MOUSE_MOVE_DOWN,    // pin A4
-  MOUSE_MOVE_LEFT,    // pin A3
-  MOUSE_MOVE_RIGHT,   // pin A2
-  MOUSE_LEFT,         // pin A1
-  MOUSE_RIGHT         // pin A0
+  {KEY_LEFT_CTRL, KEY_LEFT_ALT, 'm'},      // pin A5 - Mute
+  {KEY_LEFT_CTRL, KEY_LEFT_ALT, '5'},    // pin A4
+  {MOUSE_MOVE_LEFT,-1, -1},    // pin A3
+  {MOUSE_MOVE_RIGHT,-1, -1},   // pin A2
+  {MOUSE_LEFT, -1, -1},         // pin A1
+  {MOUSE_RIGHT, -1, -1}         // pin A0
 };
 
 ///////////////////////////
@@ -87,39 +87,39 @@ int keyCodes[NUM_INPUTS] = {
 - to get modifier keys, function keys, etc 
 
 KEY_LEFT_CTRL
-KEY_LEFT_SHIFT		
-KEY_LEFT_ALT		
-KEY_LEFT_GUI		
-KEY_RIGHT_CTRL		
-KEY_RIGHT_SHIFT		
-KEY_RIGHT_ALT	
-KEY_RIGHT_GUI		
+KEY_LEFT_SHIFT    
+KEY_LEFT_ALT    
+KEY_LEFT_GUI    
+KEY_RIGHT_CTRL    
+KEY_RIGHT_SHIFT   
+KEY_RIGHT_ALT 
+KEY_RIGHT_GUI   
 
-KEY_BACKSPACE		
-KEY_TAB				
-KEY_RETURN			
-KEY_ESC				
-KEY_INSERT			
-KEY_DELETE			
-KEY_PAGE_UP			
-KEY_PAGE_DOWN		
+KEY_BACKSPACE   
+KEY_TAB       
+KEY_RETURN      
+KEY_ESC       
+KEY_INSERT      
+KEY_DELETE      
+KEY_PAGE_UP     
+KEY_PAGE_DOWN   
 KEY_HOME
-KEY_END				
-KEY_CAPS_LOCK	
-	
-KEY_F1				
-KEY_F2				
-KEY_F3				
-KEY_F4				
-KEY_F5				
-KEY_F6				
-KEY_F7				
-KEY_F8				
-KEY_F9				
+KEY_END       
+KEY_CAPS_LOCK 
+  
+KEY_F1        
+KEY_F2        
+KEY_F3        
+KEY_F4        
+KEY_F5        
+KEY_F6        
+KEY_F7        
+KEY_F8        
+KEY_F9        
 KEY_F10
-KEY_F11				
-KEY_F12			
+KEY_F11       
+KEY_F12     
 
-*/	
+*/  
                                            
                                            
